@@ -14,6 +14,8 @@ public class CottageType {
 		this.cottagePrice = cottagePrice;
 	}
 
+
+
 	public String getTypeOfCottage() {
 		return typeOfCottage;
 	}
@@ -38,15 +40,10 @@ public class CottageType {
 		this.cottagePrice = cottagePrice;
 	}
 
-//	@Override
-//	public String toString() {
-//		return "CottageType [typeOfCottage=" + typeOfCottage + ", noOfBed="
-//				+ noOfBed + ", cottagePrice=" + cottagePrice + "]";
-//	}
-	
 	@Override
 	public String toString() {
-		return "Cottage Type = " + typeOfCottage + " and No of Bed = " + noOfBed ;
+		return "CottageType [typeOfCottage=" + typeOfCottage + ", noOfBed="
+				+ noOfBed + ", cottagePrice=" + cottagePrice + "]";
 	}
 	
 }

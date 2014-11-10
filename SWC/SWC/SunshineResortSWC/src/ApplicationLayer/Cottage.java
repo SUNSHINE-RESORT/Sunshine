@@ -1,4 +1,4 @@
-  package ApplicationLayer;
+package ApplicationLayer;
 
 
 
@@ -7,11 +7,20 @@ public class Cottage {
 	private CottageType cottageType;
 	
 	public Cottage(){}
-	public Cottage(int cottageNo, CottageType cottageType) {
-		this.cottageNo = cottageNo;		
+	public Cottage(int cottageNo,CottageType cottageType) {
+		super();
+		this.cottageNo = cottageNo;
 		this.cottageType = cottageType;
 	}
-	
+
+	public Cottage(int cottageNo,CottageType noOfBed, CottageType typeOfCottage) {
+		super();
+		this.cottageNo = cottageNo;
+		cottageType = noOfBed ;
+		cottageType = typeOfCottage;
+
+	}
+
 	public int getCottageNo() {
 		return cottageNo;
 	}
@@ -33,7 +42,6 @@ public class Cottage {
 		return "Cottage [cottageNo=" + cottageNo + ", cottageType="
 				+ cottageType + "]";
 	}
-
 		
 	
 }
